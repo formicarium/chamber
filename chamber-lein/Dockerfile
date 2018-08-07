@@ -34,4 +34,6 @@ RUN lein
 
 RUN npm install -g formicarium/stinger#master
 
+ADD ./scripts /scripts
+
 CMD ["stinger"]
