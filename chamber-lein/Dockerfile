@@ -32,8 +32,10 @@ RUN wget -q -O /usr/bin/lein \
 
 RUN lein
 
-RUN npm install -g formicarium/stinger#master
+RUN npm install -g @formicarium/stinger@1.3.2
 
 ADD ./scripts /scripts
+
+RUN chmod +x /scripts/*
 
 CMD ["stinger"]
