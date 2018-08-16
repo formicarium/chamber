@@ -32,7 +32,7 @@ RUN wget -q -O /usr/bin/lein \
 
 RUN lein
 
-RUN npm install -g @formicarium/stinger@1.3.2
+RUN npm install -g @formicarium/stinger@1.4.0
 
 ADD ./scripts /scripts
 
